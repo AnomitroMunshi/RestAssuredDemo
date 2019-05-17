@@ -9,7 +9,7 @@ import io.restassured.http.ContentType;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-public class PostTest {
+public class PostTest3usingXML {
 	String placeId="";
 	//Scenario=Add a place and delete it
 	
@@ -45,8 +45,8 @@ public class PostTest {
 		queryParam("key","qaclick123").
 		body(b).
 					when().
-					post("/maps/api/place/add/json").then().
-					assertThat().statusCode(200).and().contentType(ContentType.JSON).and().
+					post("/maps/api/place/add/xml").then().
+					assertThat().statusCode(200).and().contentType(ContentType.XML).and().
 					body("status",equalTo("OK"))
 					.extract().response();
 		

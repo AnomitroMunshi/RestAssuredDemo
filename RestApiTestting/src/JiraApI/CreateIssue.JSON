@@ -1,0 +1,13 @@
+{
+    "fields": {
+       "project":
+       {
+          "key": "RES"
+       },
+       "summary": "Creating issue through Automation: E2E",
+       "description": "Creating my 1st bug through Automation",
+       "issuetype": {
+          "name": "Bug"
+       }
+   }
+}
